@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-22T21:48:36.750Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="G4m9r6rAZS3MoGIK0ddP" version="24.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-04-22T22:09:46.300Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="LxnolZwZO9Dz_tNjOqSU" version="24.2.7" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Components">
     <mxGraphModel dx="989" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -263,10 +263,109 @@
     </mxGraphModel>
   </diagram>
   <diagram id="KAtjBUedNfmfqGlVJ2dM" name="Sequence">
-    <mxGraphModel dx="1434" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2216" dy="817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="52OlmpjXNag8NZeNVnOG-27" value="&lt;span style=&quot;white-space: pre;&quot; data-slate-fragment=&quot;JTVCJTdCJTIyZGF0YSUyMiUzQSU3QiU3RCUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJjaGlsZHJlbiUyMiUzQSU1QiU3QiUyMnRleHQlMjIlM0ElMjJzZXF1ZW5jZSUyMGRpYWdyYW0lMjBmb3IlMjBidXlpbmclMjBhJTIwc2VhdCUyMG9mJTIwYSUyMGxvd2VzdCUyMHByaWNlJTIyJTJDJTIydXVpLXJpY2hUZXh0RWRpdG9yLXNwYW4tbWFyayUyMiUzQXRydWUlN0QlNUQlN0QlNUQ=&quot;&gt;Sequence diagram for buying a seat of a lowest price&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-825" y="20" width="945" height="900" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-28" value="Castomer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="70" width="150" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-29" value="TicketingSystem" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="-558" y="70" width="150" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-30" value="PaymentGateway" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="-315" y="70" width="150" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-31" value="NotificationService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="70" width="153" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-32" value="Request available seats with lowest price" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-28" target="52OlmpjXNag8NZeNVnOG-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-589" y="177" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-33" value="Find available seats" style="curved=1;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-29" target="52OlmpjXNag8NZeNVnOG-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-433" y="229" />
+              <mxPoint x="-433" y="259" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-34" value="Return available seats" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-29" target="52OlmpjXNag8NZeNVnOG-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-589" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-35" value="Request to buy seat" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-28" target="52OlmpjXNag8NZeNVnOG-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-589" y="363" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-36" value="Initiate payment process" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-29" target="52OlmpjXNag8NZeNVnOG-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-351" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-37" value="Payment response" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-30" target="52OlmpjXNag8NZeNVnOG-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-351" y="467" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-38" value="Reserve seat" style="curved=1;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-29" target="52OlmpjXNag8NZeNVnOG-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-433" y="519" />
+              <mxPoint x="-433" y="549" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-39" value="Confirm reservation" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-29" target="52OlmpjXNag8NZeNVnOG-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-589" y="601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-40" value="Send booking confirmation" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-29" target="52OlmpjXNag8NZeNVnOG-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-251" y="653" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-41" value="Notify user" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="52OlmpjXNag8NZeNVnOG-31" target="52OlmpjXNag8NZeNVnOG-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-367" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-43" value="Castomer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-780" y="750" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-44" value="TicketingSystem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="750" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-45" value="PaymentGateway" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-315" y="750" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="52OlmpjXNag8NZeNVnOG-46" value="NotificationService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="750" width="150" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
